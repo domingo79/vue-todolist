@@ -11,9 +11,19 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     background-image: url('/asset/img/sfondo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+#app
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 .addLista
 {
@@ -40,11 +50,36 @@ body
     background: #fff;
     padding: 0.25rem;
 }
-
+.lista > input
+{
+    width: 250px;
+}
+.fa-check-circle
+{
+    color: green;
+}
 .noLista
 {
     width: 350px;
     color: #fff;
     background-color: #345;
 }
+.carrello
+{
+    width: 250px;
+    padding: 0.25rem;
+    color: #fff;
+    background-color: rgb(89, 190, 89);
+    letter-spacing: 5px;
+    margin: 0 1rem;
+}
+.cancellati
+{
+    width: 250px;
+    padding: 0.25rem;
+    background-color: #f50055;
+    color: #fff;
+    letter-spacing: 5px;
+    margin: 0 1rem;
 
+}
