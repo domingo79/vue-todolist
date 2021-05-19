@@ -15,14 +15,36 @@ body
     background-repeat: no-repeat;
     background-size: cover;
 }
+.addLista
+{
+    margin: 1rem 0;
+}
+.addLista input
+{
+    width: 265px;
+}
+.addLista button
+{
+    width: 80px;
+    padding: 5px 15px;
+    background-color: #345;
+    color: #fff;
+}
 .lista
 {
     width: 350px;
     height: 100%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center; */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
     background: #fff;
+    padding: 0.25rem;
+}
+
+.noLista
+{
+    width: 350px;
+    color: #fff;
+    background-color: #345;
 }
 

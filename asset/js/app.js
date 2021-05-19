@@ -6,26 +6,27 @@ const app = new Vue({
             'latte',
             'pane',
             'uova',
-            'faria'
-        ],
+            'farina'],
+        carrello: []
     },
     methods: {
-        aggiungi() {
-            if (!this.listaSpesa.includes(this.nuovaLista)) {
 
+        aggiungi() {
+            if (this.nuovaLista.length > 1 && !(this.listaSpesa.includes(this.nuovaLista))) {
                 this.listaSpesa.push(this.nuovaLista)
-            } else if (this.nuovaLista.length <= 0) {
-                console.log('non aggiunto nulla');
-            }
-            else {
-                alert('prodotto già inserito')
-                //console.log('gia inserito');
+            } else {
+                alert('prodotto già inserito o incorretto')
             }
             this.nuovaLista = ''
         },
 
         rimuovi(index) {
             console.log('rimozione di: ' + index);
+            this.listaSpesa.splice(index, 1)
+        },
+        complete(index) {
+            console.log(this.listaSpesa[index]);
+            this.carrello.push(this.listaSpesa[index]);
             this.listaSpesa.splice(index, 1)
         }
 

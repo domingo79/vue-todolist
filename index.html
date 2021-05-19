@@ -18,9 +18,25 @@
             <input v-model="nuovaLista" placeholder="Inserisci Prodotto" @keyup.enter="aggiungi">
             <button @click="aggiungi">Aggiungi</button>
         </div>
-        <div class="lista" v-for="(lista, index) in listaSpesa">{{lista}}
-            <i class="fa fa-times-circle" @click="rimuovi"></i>
+
+        <div class="listaSpesa" v-if="listaSpesa.length > 0">
+
+            <div class="lista" v-for="(lista, index) in listaSpesa">
+                {{lista}}
+                <i class="fas fa-check-circle" @click="complete"></i>
+                <i class="fas fa-trash-alt" @click="rimuovi"></i>
+            </div>
+
         </div>
+
+        <div class="noLista" v-else>
+            <p>Lista Vuota.. Nulla da comprare</p>
+        </div>
+
+        <div class="carrello" v-for="(prodotti, index) in carrello">
+
+        </div>
+
 
     </div>
 
