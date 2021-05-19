@@ -14,7 +14,13 @@
 
     <div id="app">
 
-        <div class="lista" v-for="(lista, index) in listaSpesa">{{lista}}</div>
+        <div class="addLista">
+            <input v-model="nuovaLista" placeholder="Inserisci Prodotto" @keyup.enter="aggiungi">
+            <button @click="aggiungi">Aggiungi</button>
+        </div>
+        <div class="lista" v-for="(lista, index) in listaSpesa">{{lista}}
+            <i class="fa fa-times-circle" @click="rimuovi"></i>
+        </div>
 
     </div>
 
