@@ -1,0 +1,28 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/asset/img/sfondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lista
+{
+    width: 350px;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center; */
+    background: #fff;
+}
+
